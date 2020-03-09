@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="statusBarBgColor_light">#FFFFFF</color>
+    <color name="statusBarBgColor_dark">#000000</color>
+
+    <color name="colorPrimary_dark">#00158C</color>
+    <color name="colorPrimary_light">#6370B6</color>
+
+    <color name="colorPrimaryDark_dark">#17004C</color>
+    <color name="colorPrimaryDark_light">#485498</color>
+
+    <color name="colorAccent_dark">#008A7D</color>
+    <color name="colorAccent_light">#03DAC5</color>
+
+    <color name="windowBackground_dark">#000000</color>
+    <color name="windowBackground_light">#ffffff</color>
+    <color name="itemListTextColor_light">#000000</color>
+    <color name="itemListTextColor_dark">#666666</color>
+    <color name="textColorPrimary_light">#000000</color>
+    <color name="textColorPrimary_dark">#666666</color>
+</resources>

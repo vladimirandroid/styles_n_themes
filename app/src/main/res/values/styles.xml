@@ -1,0 +1,45 @@
+<resources>
+
+    <!--  THEMES  -->
+    <style name="BaseAppThemeLight" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="BaseAppThemeDark" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="Light" parent="BaseAppThemeLight">
+        <item name="statusBarBgColor">@color/statusBarBgColor_light</item>
+        <item name="isStatusBarBgLight">true</item>
+
+        <item name="android:windowBackground">@color/windowBackground_light</item>
+        <item name="colorPrimary">@color/colorPrimary_light</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_light</item>
+        <item name="colorAccent">@color/colorAccent_light</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary_light</item>
+        <item name="android:textColorSecondary">@color/textColorPrimary_light</item>
+        <item name="actionBarWidgetTheme">@null</item>
+    </style>
+
+
+    <style name="Dark" parent="BaseAppThemeDark">
+        <item name="statusBarBgColor">@color/statusBarBgColor_dark</item>
+        <item name="isStatusBarBgLight">false</item>
+
+        <item name="android:windowBackground">@color/windowBackground_dark</item>
+        <item name="colorPrimary">@color/colorPrimary_dark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_dark</item>
+        <item name="colorAccent">@color/colorAccent_dark</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary_dark</item>
+        <item name="android:textColorSecondary">@color/textColorPrimary_dark</item>
+        <item name="actionBarWidgetTheme">@null</item>
+    </style>
+
+    <style name="ToolbarTheme">
+
+    </style>
+
+    <!--  STYLES  -->
+
+    <style name="textAppearanceListItem" parent="@style/TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+
+    <!--  THEMES  -->
+
+    <style name="BaseAppThemeDark" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">?statusBarBgColor</item>
+    </style>
+
+</resources>

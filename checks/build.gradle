@@ -1,0 +1,33 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    compileOnly 'com.android.tools.lint:lint-api:26.6.0'
+    compileOnly 'com.android.tools.lint:lint-checks:26.6.0'
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+jar {
+    manifest {
+        attributes 'Lint-Registry': 'com.androidjunior.lint.DarkThemeLintRegistry'
+    }
+}
+
+/**
+ * Copies the jar file containing your lint module
+ * into the .android/lint directory in your home folder.
+ * */
+task copyLintJar(type: Copy) {
+    description = 'Copies the lint jar file into the {user.home}/.android/lint folder.'
+    from('build/libs/')
+    into(System.getProperty("user.home") + '/.android/lint')
+    include("*.jar")
+}
+
+// Runs the copyLintJar task after build has completed.
+build.finalizedBy(copyLintJar)

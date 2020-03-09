@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="statusBarBgColor" format="color" />
+    <attr name="isStatusBarBgLight" format="boolean" />
+
+    <attr name="logogo" format="color" />
+
+    <declare-styleable name="TextView">
+        <attr name="logogo" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageView">
+        <attr name="logogo" />
+    </declare-styleable>
+
+</resources>
